@@ -3,11 +3,11 @@ include 'header.php';
 
 echo "<h3>View Students</h3>";
 
-if (!file_exists('student.txt')) {
+if (!file_exists('students.txt')) {
     echo "<p>No students found.</p>";
 } else {
 
-    $students = file('student.txt', FILE_IGNORE_NEW_LINES);
+    $students = file('students.txt', FILE_IGNORE_NEW_LINES);
 
     if (count($students) === 0) {
         echo "<p>No students added yet.</p>";
